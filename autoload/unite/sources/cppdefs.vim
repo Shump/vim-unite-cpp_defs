@@ -27,7 +27,7 @@ endfunction
 "call unite#define_source(s:unite_source)
 "unlet s:unite_source
 
-function! unite#source#cppdefs#define()
+function! unite#sources#cppdefs#define()
   return s:unite_source
 endfunction
 
