@@ -11,11 +11,11 @@ let s:unite_source = {
 function! s:generate_cantidate(word, line)
   let path = expand('%:p')
   return {
-        \ 'word': word . ': ' . path,
+        \ 'word': a:word . ': ' . path,
         \ 'source': 'cpp_defs',
         \ 'kind': 'jump_list',
         \ 'action__path': path,
-        \ 'action__line': line,
+        \ 'action__line': a:line,
         \}
 endfunction
 
