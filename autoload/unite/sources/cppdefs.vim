@@ -21,7 +21,7 @@ endfunction
 
 
 function! s:unite_source.gather_candidates(args, context)
-  return [ s:generate_cantidate('one', 1) ]
+  return [ s:generate_cantidate('one', 1), s:generate_cantidate('two', 2) ]
 endfunction
 
 "call unite#define_source(s:unite_source)
